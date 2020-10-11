@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn,
+input {
+  height: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  border: none;
+  border-radius: 0.15rem;
+}
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  height: 1.5rem;
+  width: 70%;
+  margin: 1rem auto;
+  background: #f3f2f2;
+  margin-left: 0.6rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, lightblue, lightgreen);
+  height: 100vh;
+  width: 80%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  border-radius: 0.18rem;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.todoParent {
+  list-style-type: decimal;
+}
+.todoKid {
+  text-align: center;
+  transition: all 0.25 ease;
+}
+.makeList {
+  width: 50%;
+  background: cornflowerblue;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+.listSection {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.addItem {
+  background: rgb(66, 199, 106);
+}
+
+.clearList {
+  background-color: rgba(240, 23, 23, 0.9);
+  margin-top: 1rem;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
