@@ -8,7 +8,7 @@ const itemInput = document.querySelector("#item");
 const todoParent = document.querySelector(".todoParent");
 const makeListBtn = document.querySelector(".makeList");
 const liButtonStyle =
-  'border: none; margin:auto .4rem; font-family:"Poppins", sans-serif ; border-radius: .1rem;  height: 2rem;';
+  'border: none; cursor: pointer; margin:auto .4rem; font-family:"Poppins", sans-serif ; border-radius: .1rem;  height: 2rem;';
 
 addTitleBtn.addEventListener("click", () => {
   let headerstring = titleInput.value;
@@ -53,7 +53,7 @@ function addItem(itemString) {
   deleteBtn.textContent = "Delete";
   deleteBtn.style.cssText = `background:  red ; ${liButtonStyle} `;
   li.classList.add("todoKid");
-  li.style.cssText = "transition: all .25s ease; margin-top: .5rem";
+  li.style.cssText = "transition: all .25s ease; margin-top: .5rem;";
   li.textContent = itemString;
   li.append(doneBtn, deleteBtn);
   let liButtons = li.querySelectorAll("button");
